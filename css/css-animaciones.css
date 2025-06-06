@@ -96,10 +96,12 @@
   }
 }
 
+.articulo {
+  animation: cargar 1s ease-in 1 alternate;
+}
+
 @media (min-width: 1024px) {
   .articulo {
-    animation: cargar 1s ease-in 1 alternate;
-
     img {
       transition: 1s;
       &:hover {
