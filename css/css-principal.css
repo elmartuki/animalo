@@ -69,6 +69,12 @@ iframe {
   filter: opacity(50%);
 }
 
+/* CAROUCEL */
+
+.carousel-inner {
+  border-bottom: 5px solid black;
+}
+
 @media (min-width: 1440px) {
   /* BUSCADOR */
   input.form-control.me-2 {

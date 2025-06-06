@@ -71,6 +71,7 @@
 .redes {
   img {
     transition: 0.5s;
+    border-radius: 20px;
     &:hover {
       background-color: white;
       border-radius: 10px;
