@@ -95,6 +95,11 @@ iframe {
   /* BUSCADOR */
   input.form-control.me-2 {
     width: 800px;
+
+    &:focus {
+      background-color: transparent;
+      color: white;
+    }
   }
 
   /* FONDO */

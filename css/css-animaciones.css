@@ -85,6 +85,17 @@
   animation: activado 2s ease infinite alternate;
 }
 
+.carousel-inner {
+  .carousel-item {
+    img {
+      transition: 1s;
+      &:hover {
+        height: 600px !important;
+      }
+    }
+  }
+}
+
 @media (min-width: 1024px) {
   .articulo {
     animation: cargar 1s ease-in 1 alternate;
