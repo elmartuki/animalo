@@ -38,9 +38,15 @@
   color: rgba(255, 255, 255, 0.445) !important;
 }
 
-input.form-control.me-2 {
-  background: transparent;
+input.form-control {
+  border: 1px solid #dc3545;
+  border-radius: 0px;
   color: rgba(255, 255, 255, 0.856);
+  background: transparent;
+}
+
+.btn {
+  border-radius: 0px;
 }
 
 /* ARTICULOS */
@@ -56,10 +62,9 @@ span {
   filter: invert();
 }
 
-
 /* MAPA */
 
-iframe{
+iframe {
   border-radius: 20px;
   filter: opacity(50%);
 }
