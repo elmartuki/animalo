@@ -1,0 +1,20 @@
+.form-control::placeholder {
+  color: white !important;
+}
+
+@media (min-width: 1440px) {
+  .acceso {
+    width: 20rem !important;
+
+    img {
+      width: 40px;
+    }
+  }
+  .articulo {
+    width: 20rem !important;
+
+    img {
+      height: 300px;
+    }
+  }
+}
