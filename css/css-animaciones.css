@@ -58,18 +58,6 @@
   animation: cargar 1s ease-in 1 alternate;
 }
 
-.articulo {
-  animation: cargar 1s ease-in 1 alternate;
-
-  img {
-    transition: 1s;
-    &:hover {
-      transform: perspective(300px) rotateY(10deg) rotateX(5deg) scale(1.1);
-      cursor: pointer;
-    }
-  }
-}
-
 .mapas {
   iframe {
     transition: 1s;
@@ -92,6 +80,20 @@
 
 .activado {
   animation: activado 2s ease infinite alternate;
+}
+
+@media (min-width: 1024px) {
+  .articulo {
+    animation: cargar 1s ease-in 1 alternate;
+
+    img {
+      transition: 1s;
+      &:hover {
+        transform: perspective(300px) rotateY(10deg) rotateX(5deg) scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 /* ANIMACIONES */
