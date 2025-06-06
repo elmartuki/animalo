@@ -74,7 +74,7 @@ iframe {
   border-bottom: 5px solid black;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 360px) {
   .articulo {
     width: 11rem !important;
   }
