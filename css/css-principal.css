@@ -56,6 +56,14 @@ span {
   filter: invert();
 }
 
+
+/* MAPA */
+
+iframe{
+  border-radius: 20px;
+  filter: opacity(50%);
+}
+
 @media (min-width: 1440px) {
   /* BUSCADOR */
   input.form-control.me-2 {
