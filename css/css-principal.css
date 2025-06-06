@@ -56,12 +56,6 @@ span {
   filter: invert();
 }
 
-/* FOOTER */
-
-footer {
-  border-top: 3px solid white;
-}
-
 @media (min-width: 1440px) {
   /* BUSCADOR */
   input.form-control.me-2 {
@@ -102,11 +96,5 @@ footer {
     img {
       height: 350px;
     }
-  }
-
-  /* FOOTER */
-
-  footer {
-    flex-direction: row !important;
   }
 }
