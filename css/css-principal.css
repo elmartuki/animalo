@@ -6,11 +6,48 @@
   font-weight: 600 !important;
 }
 
+/* BUSCADOR */
+
 .form-control::placeholder {
   color: white !important;
 }
 
+input.form-control.me-2 {
+  background: transparent;
+  color: white;
+}
+
+/* LOGO */
+span {
+  filter: invert();
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 3px solid white;
+}
+
 @media (min-width: 1440px) {
+  /* BUSCADOR */
+  input.form-control.me-2 {
+    width: 800px;
+  }
+
+  /* CARROUCEL */
+  .carousel-inner {
+    height: 400px;
+
+    .carousel-item {
+      img {
+        height: 400px !important;
+        object-fit: cover;
+        object-position: 0% 50%;
+      }
+    }
+  }
+
+  /* CATEGORIAS */
   .categorias {
     width: 20rem !important;
 
@@ -18,11 +55,20 @@
       width: 40px;
     }
   }
+
+  /* ARTICULOS */
   .articulo {
     width: 20rem !important;
 
     img {
-      height: 300px;
+      height: 350px;
+      object-fit: cover;
     }
+  }
+
+  /* FOOTER */
+
+  footer {
+    flex-direction: row !important;
   }
 }
