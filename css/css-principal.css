@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 
 .carousel-inner {
@@ -17,15 +17,34 @@
   }
 }
 
+
+/* FONDO */
+
+.fondo{
+  position: absolute;
+  width: 100%;
+  height: 1450px;
+  object-fit: cover;
+  filter: opacity(97%);
+  z-index: -1;
+}
+/* TEXT-WHITE */
+
+.text-white{
+  color: rgba(255, 255, 255, 0.856) !important;
+}
+
+
+
 /* BUSCADOR */
 
 .form-control::placeholder {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.856) !important;
 }
 
 input.form-control.me-2 {
   background: transparent;
-  color: white;
+  color: rgba(255, 255, 255, 0.856);
 }
 
 /* ARTICULOS */
