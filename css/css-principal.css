@@ -28,6 +28,14 @@ input.form-control.me-2 {
   color: white;
 }
 
+/* ARTICULOS */
+
+.articulo {
+  img {
+    object-fit: cover;
+  }
+}
+
 /* LOGO */
 span {
   filter: invert();
@@ -73,7 +81,6 @@ footer {
 
     img {
       height: 350px;
-      object-fit: cover;
     }
   }
 
