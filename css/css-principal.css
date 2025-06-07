@@ -8,6 +8,7 @@
 
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -27,12 +28,8 @@ body {
 
 /* FONDO */
 .fondo {
-  position: absolute;
-  width: 100%;
-  height: 2200px;
-  object-fit: cover;
-  filter: opacity(97%);
-  z-index: -1;
+  background-image: url(/img/fondo.png);
+  background-attachment: fixed;
 }
 /* TEXT-WHITE */
 
@@ -92,13 +89,6 @@ iframe {
   }
 }
 
-@media (min-width: 768px) {
-  /* FONDO */
-  .fondo {
-    height: 1900px;
-  }
-}
-
 @media (min-width: 1024px) {
   .articulo {
     width: 18rem !important;
@@ -114,12 +104,6 @@ iframe {
       background-color: transparent;
       color: var(--color-texto-blanco) !important;
     }
-  }
-
-  /* FONDO */
-
-  .fondo {
-    height: 2000px;
   }
 
   /* MAPA */

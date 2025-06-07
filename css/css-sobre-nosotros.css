@@ -4,9 +4,6 @@
   object-fit: cover;
 }
 
-.fondo {
-  height: 2500px;
-}
 
 section {
   article:nth-child(1) {
@@ -45,10 +42,6 @@ section {
     height: 300px;
     object-position: 0% 100%;
     object-fit: cover;
-  }
-
-  .fondo {
-    height: 1200px;
   }
 
   section {
