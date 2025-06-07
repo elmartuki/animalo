@@ -3,11 +3,75 @@
 .categorias {
   transition: 0.5s;
   cursor: pointer;
+  animation: cargar 1s ease-in 1 alternate;
 
   &:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 10px 10px rgba(0, 255, 213, 0.549);
-    filter: invert();
+    box-shadow: 0px 0px 10px 10px rgba(255, 0, 0, 0.549);
+  }
+}
+
+.categorias:nth-child(2) {
+  transition: 1s;
+  &:hover {
+    animation: figuras 7s linear infinite alternate;
+  }
+
+  .card-body {
+    img{
+      filter: drop-shadow(30px 10px 4px #000000 !important);
+    }
+    p {
+      text-shadow: 0px 0px 5px black; !important;
+    }
+  }
+}
+
+
+.categorias:nth-child(3) {
+  transition: 1s;
+  &:hover {
+    animation: ropa 7s linear infinite alternate;
+  }
+
+  .card-body {
+    img{
+      filter: drop-shadow(30px 10px 4px #000000 !important);
+    }
+    p {
+      text-shadow: 0px 0px 5px black; !important;
+    }
+  }
+}
+
+
+.categorias:nth-child(4) {
+  transition: 1s;
+  &:hover {
+    animation: manga 7s linear infinite alternate;
+  }
+
+  .card-body {
+    img{
+      filter: drop-shadow(30px 10px 4px #000000 !important);
+    }
+    p {
+      text-shadow: 0px 0px 5px black; !important;
+    }
+  }
+}
+
+
+.categorias:nth-child(5) {
+  transition: 1s;
+  &:hover {
+    animation: accesorios 7s linear infinite alternate;
+  }
+
+  .card-body {
+    p {
+      text-shadow: 0px 0px 5px black; !important;
+    }
   }
 }
 
@@ -61,10 +125,6 @@
       border-radius: 10px;
     }
   }
-}
-
-.categorias {
-  animation: cargar 1s ease-in 1 alternate;
 }
 
 .mapas {
@@ -157,6 +217,166 @@
     box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.596);
   }
 }
+
+@keyframes manga {
+  0% {
+    background-color: black;
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  5%{
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/1a/88/58/1a885860c5a4e5059875058f7884a5f6.jpg);
+    background-size: 100% 200px;
+  }
+
+  25% {
+    background-image: url(https://i.pinimg.com/736x/8b/56/e3/8b56e30c332ac5cfcf88c6f58d2f579a.jpg);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  50% {
+    background-image: url(https://es.gizmodo.com/app/uploads/2022/06/03d1939b8f83972dde6b669ea201a1c4.jpg);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  75% {
+    background-image: url(https://senpaitv.com/wp-content/uploads/2023/06/blue-lock-manga.jpg);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  100% {
+    background-size: cover;
+    background-size: 100% 200px;
+    background-image: url(https://i.blogs.es/b986db/kagurabachi/500_333.jpeg);
+  }
+}
+
+@keyframes accesorios {
+  0% {
+    background-color: black;
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  5%{
+    background-size: cover;
+    background-image: url(https://www.dalmatoys.com.ar/wp-content/uploads/2021/11/20220824033434_1.jpg);
+    background-size: 100% 200px;
+  }
+
+  25% {
+    background-image: url(https://i.pinimg.com/736x/43/92/69/4392693da766636e4802452e1f6db1c7.jpg);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  50% {
+    background-image: url(https://kmventasvirtuales.net/inicio/wp-content/uploads/2022/09/AO022-E-1.jpg);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  75% {
+    background-image: url(https://http2.mlstatic.com/D_NQ_NP_695555-MLM71278769209_082023-O-accesorios-anime-para-regreso-a-clases-kimetsu-demon-slayer.webp);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  100% {
+    background-size: cover;
+    background-size: 100% 200px;
+    background-image: url(https://alitools.io/es/showcase/image?url=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHTB1CIE0cTvI8KJjSspjq6AgjXXaB%2FNEW-Anime-Shingeki-no-Kyojin-Decoration-pillow-case-cover-Attack-on-Titan-Levi-Rivaille-Hugging-Body.jpg_480x480.jpg);
+  }
+}
+
+@keyframes ropa {
+  0% {
+    background-color: black;
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  5%{
+    background-size: cover;
+    background-image: url(https://acdn-us.mitiendanube.com/stores/004/105/084/products/fmmnsudaderas-con-capucha-de-anime-berserk-unisex-jerseys-harajuku-de-manga-larga-ropa-de-calle-con-0228132fcd6ec1c09517092622539120-480-0.webp);
+    background-size: 100% 200px;
+  }
+
+  25% {
+    background-image: url(https://img.joomcdn.net/d6a10e066e7ac989f738d68c75dd3f61d3020a69_original.jpeg);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  50% {
+    background-image: url(https://ropa-anime.org/wp-content/uploads/2021/03/518BNpyyexL._AC_SX679_-300x300.jpg);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  75% {
+    background-image: url(https://i5.walmartimages.com/asr/b5ba8c93-2c3a-48f5-bbdf-6cf037f1525c.861046ab3d88a4ff1bb06e65ae40069e.webp?odnHeight=612&odnWidth=612&odnBg=FFFFFF);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  100% {
+    background-size: cover;
+    background-size: 100% 200px;
+    background-image: url(https://futoikarasu.com/wp-content/uploads/2023/11/bershka-10.jpg?w=799);
+  }
+}
+
+
+@keyframes figuras {
+  0% {
+    background-color: black;
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  5%{
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/a7/5a/b3/a75ab36d3df4334a60f36063316d9930.jpg);
+    background-size: 100% 200px;
+  }
+
+  25% {
+    background-image: url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/01/figura-resina-son-goku.jpg?tf=3840x);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  50% {
+    background-image: url(https://alfabetajuega.com/hero/2023/07/nezuko-2_x16_drawing.jpg?width=1200);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  75% {
+    background-image: url(https://www.chirchi.com/wp-content/uploads/2024/05/frieren-nendoroid.jpg);
+    background-size: cover;
+    background-size: 100% 200px;
+  }
+
+  100% {
+    background-size: cover;
+    background-size: 100% 200px;
+    background-image: url(https://grandlinecoleccionables.com/cdn/shop/files/02_750x1050_498e432a-bf17-471f-b383-a01a091925fa.webp?v=1714550141&width=533);
+  }
+}
+
+
+
+
+
+
+
 
 /* MEDIA QUERIES */
 
