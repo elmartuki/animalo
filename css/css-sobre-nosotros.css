@@ -5,7 +5,7 @@
 }
 
 .fondo {
-  height: 2200px;
+  height: 2500px;
 }
 
 section {
@@ -45,6 +45,10 @@ section {
     height: 300px;
     object-position: 0% 100%;
     object-fit: cover;
+  }
+
+  .fondo {
+    height: 1200px;
   }
 
   section {
