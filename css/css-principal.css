@@ -29,7 +29,7 @@ body {
 .fondo {
   position: absolute;
   width: 100%;
-  height: 2300px;
+  height: 2200px;
   object-fit: cover;
   filter: opacity(97%);
   z-index: -1;
