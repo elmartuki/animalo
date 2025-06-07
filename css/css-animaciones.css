@@ -17,6 +17,10 @@
   }
 }
 
+.seleccionado {
+  animation: fuego 2s ease infinite alternate;
+}
+
 .nav-item {
   .nav-link {
     transition: 0.5s;
@@ -24,7 +28,7 @@
     &:hover {
       transform: scale(1.03);
       color: black !important;
-      background-color: white;
+      background-color: var(--color-texto-blanco);
       border-radius: 10px;
       margin: 0px 5px;
     }
@@ -37,7 +41,7 @@
   &:hover {
     transform: scale(1.03);
     color: black !important;
-    background-color: white;
+    background-color: var(--color-texto-blanco);
     border-radius: 10px;
     padding: 0px 5px;
   }
@@ -73,8 +77,9 @@
   img {
     transition: 0.5s;
     border-radius: 20px;
+    cursor: pointer;
     &:hover {
-      background-color: white;
+      background-color: var(--color-texto-blanco);
       border-radius: 10px;
       transform: scale(1.4);
     }
@@ -106,6 +111,7 @@
       transition: 1s;
       &:hover {
         transform: perspective(300px) rotateY(10deg) rotateX(5deg) scale(1.1);
+        filter: drop-shadow(30px 10px 4px #ffffff12);
         cursor: pointer;
       }
     }
@@ -137,5 +143,15 @@
   100% {
     transform: scale(1);
     opacity: 100%;
+  }
+}
+
+@keyframes fuego {
+  0% {
+    outline: 0px solid rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.596);
   }
 }

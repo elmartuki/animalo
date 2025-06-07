@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animalo</title>
+    <meta name="author" content="Diaz Martin" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../css/css-principal.css" />
+    <link rel="stylesheet" href="../css/css-animaciones.css" />
+    <link rel="stylesheet" href="../css/css-sobre-nosotros.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg bg-dark position-sticky top-0 z-3">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href=""
+          ><img width="55px" src="../img/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link bg-white active text-black ps-3 pe-3 rounded-3"
+                aria-current="page"
+                href="../pages/figuras.html"
+                >Inicio</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="../pages/figuras.html"
+                >Figuras</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/ropas.html"
+                >Ropas</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/mangas.html"
+                >Mangas</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/accesorios.html"
+                >Accesorios</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar algo..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-danger" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- FONDO -->
+      <img class="fondo" src="../img/fondo.png" alt="" />
+
+      <section
+        class="d-flex flex-row flex-wrap justify-content-around gap-5 pt-5"
+      >
+        <article class="bg-dark rounded-3 d-flex">
+          <div class="p-4 w-50 d-flex flex-column justify-content-center">
+            <h5 class="text-center text-white">Sobre Nosotros</h5>
+            <p class="text-white text-center">
+              En Animalo vivimos y respiramos la cultura anime y manga. Somos
+              una tienda especializada en brindar a otakus y coleccionistas de
+              todo el mundo productos de la más alta calidad, seleccionados con
+              pasión y dedicación.
+            </p>
+          </div>
+
+          <div class="w-50">
+            <img class="nosotros-img" src="../img/nosotros-1.png" alt="" />
+          </div>
+        </article>
+
+        <article class="bg-dark rounded-3 d-flex">
+          <div class="p-4 w-50 d-flex flex-column justify-content-center">
+            <h5 class="text-center text-white ">Nuestra misión</h5>
+            <p class="text-white text-center">
+              Acercar lo mejor del universo anime y manga a tu vida diaria,
+              ofreciendo figuras, pósters, ropa, accesorios y artículos de
+              edición limitada.
+            </p>
+          </div>
+
+          <div class="w-50">
+            <img class="nosotros-img" src="../img/nosotros-2.png" alt="" />
+          </div>
+        </article>
+
+        <article class="bg-dark rounded-3 d-flex">
+          <div class="p-3 w-50 d-flex flex-column justify-content-center">
+            <h5 class="text-center text-white">Nuestros valores</h5>
+            <p class="text-white pb-2">
+              Pasión: Seleccionamos cada artículo con la emoción de un verdadero
+              fan.
+            </p>
+            <p class="text-white pb-2">
+              Calidad: Solo trabajamos con proveedores y marcas oficiales.
+            </p>
+
+            <p class="text-white">
+              Comunión: Impulsamos la comunidad anime, apoyando artistas y
+              organizando eventos.
+            </p>
+          </div>
+
+          <div class="w-50">
+            <img class="nosotros-img" src="../img/nosotros-3.png" alt="" />
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="mapas d-flex flex-wrap justify-content-around row-gap-3 pt-3 pb-4"
+      >
+        <div class="w-100">
+          <h4 class="text-center text-white">¡Nos ubicamos acá!</h4>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.227583137727!2d-65.14919082449076!3d-26.79832282671549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225efce8923fab%3A0xe3ceb00f96ef089!2sSan%20Mart%C3%ADn%20de%20Porres%2C%20Tucum%C3%A1n!5e1!3m2!1ses-419!2sar!4v1749162826572!5m2!1ses-419!2sar"
+          width="80%"
+          height="300px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer
+      class="d-flex flex-column align-items-center row-gap-3 pt-3 bg-dark"
+    >
+      <div class="formulario w-100">
+        <p class="text-center text-white p-2 mt-2">
+          Suscribite para recibir nuestras ofertas.
+        </p>
+        <form class="d-flex gap-3 justify-content-center" action="">
+          <input
+            class="form-control bg-dark text-white w-50"
+            type="email"
+            name=""
+            id=""
+            placeholder="ejemplo@gmail.com"
+          />
+          <button class="btn btn-outline-danger w-25">Enviar</button>
+        </form>
+      </div>
+
+      <div class="">
+        <h5 class="text-white text-center">Sobre Nosotros</h5>
+        <div class="d-flex flex-column align-items-center">
+          <a
+            class="text-decoration-none text-white animation-a"
+            href="./sobre-nosotros.html"
+            >Nosotros</a
+          >
+          <a class="text-decoration-none text-white animation-a" href="">FAQ</a>
+          <a class="text-decoration-none text-white animation-a" href=""
+            >Terminos y Condiciones</a
+          >
+        </div>
+      </div>
+
+      <div class="">
+        <div class="d-flex w-50 m-auto justify-content-center gap-4 redes">
+          <img
+            width="35px"
+            src="https://64.media.tumblr.com/cfb98feaa410a1117ce810b79ef3fd86/9e96811886d36bfc-9c/s540x810/188a850f3052e6427131126f708e0200d7042788.pnj"
+            alt=""
+          />
+          <img
+            width="35px"
+            src="https://64.media.tumblr.com/83117e949bb7b7c7b3508bd7f49a5e7e/e88b93a6e22b2b80-e4/s540x810/a625e0c057c366ca8f440634b377de1dbc7f24d1.pnj"
+            alt=""
+          />
+          <img
+            width="35px"
+            src="https://64.media.tumblr.com/7dee361859fd257486b4e46738addfb7/740cdaab71bba2c4-8b/s540x810/406c4c5a13b99fa1808cac8d116cb7ec2ef6aff9.pnj"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="w-100 bg-black">
+        <div>
+          <p class="text-center text-white p-2">©2025, Animalo.</p>
+        </div>
+      </div>
+
+      <div class="final bg-dark w-100 h-50 bg-white">
+        <div></div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"
+  ></script>
+</html>
