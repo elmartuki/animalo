@@ -1,3 +1,9 @@
-.fondo{
-    height: 1480px;
+.fondo {
+  height: 1780px;
+}
+
+@media (min-width: 1024px) {
+  .fondo {
+    height: 1580px;
+  }
 }
