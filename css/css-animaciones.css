@@ -10,10 +10,12 @@
 }
 
 .articulo {
-  transition: 0.5s;
+  transition: 1s;
+  outline: 2px solid rgb(0, 0, 0);
 
   &:hover {
     transform: scale(1.03);
+    animation: seleccionar 4s ease infinite alternate;
   }
 }
 
@@ -67,7 +69,7 @@
   iframe {
     transition: 1s;
     &:hover {
-      height: 500px;
+      height: 400px;
       filter: opacity(100%);
     }
   }
@@ -101,16 +103,13 @@
   }
 }
 
-.articulo {
-  animation: cargar 1s ease-in 1 alternate;
-}
 
 @media (min-width: 1024px) {
   .articulo {
     img {
       transition: 1s;
       &:hover {
-        transform: perspective(300px) rotateY(10deg) rotateX(5deg) scale(1.1);
+        transform: perspective(200px) rotateY(1deg) rotateX(5deg) scale(1.1);
         filter: drop-shadow(30px 10px 4px #ffffff12);
         cursor: pointer;
       }
@@ -119,6 +118,20 @@
 }
 
 /* ANIMACIONES */
+
+@keyframes seleccionar {
+  0% {
+    outline: 2px solid red;
+  }
+
+  50% {
+    outline: 2px solid green;
+  }
+
+  100% {
+    outline: 2px solid blue;
+  }
+}
 
 @keyframes activado {
   from {
@@ -133,11 +146,12 @@
 @keyframes cargar {
   0% {
     transform: scale(0.9);
-    opacity: 0%;
+    opacity: 50%;
   }
 
   80% {
     opacity: 80%;
+    transform: scale(1.02);
   }
 
   100% {
