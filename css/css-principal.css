@@ -6,7 +6,7 @@
   font-weight: 700 !important;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -29,7 +29,7 @@ body{
 .fondo {
   position: absolute;
   width: 100%;
-  height: 1900px;
+  height: 2300px;
   object-fit: cover;
   filter: opacity(97%);
   z-index: -1;
@@ -92,6 +92,13 @@ iframe {
   }
 }
 
+@media (min-width: 768px) {
+  /* FONDO */
+  .fondo {
+    height: 1900px;
+  }
+}
+
 @media (min-width: 1024px) {
   .articulo {
     width: 18rem !important;
@@ -109,15 +116,16 @@ iframe {
     }
   }
 
+  /* FONDO */
+
+  .fondo {
+    height: 2000px;
+  }
+
   /* MAPA */
 
   iframe {
     filter: opacity(50%);
-  }
-
-  /* FONDO */
-  .fondo {
-    height: 2000px;
   }
 
   /* CARROUCEL */
