@@ -220,7 +220,7 @@
 
 @keyframes manga {
   0% {
-    background-color: black;
+    background-color: white;
     background-size: cover;
     background-size: 100% 200px;
   }
@@ -258,7 +258,7 @@
 
 @keyframes accesorios {
   0% {
-    background-color: black;
+    background-color: white;
     background-size: cover;
     background-size: 100% 200px;
   }
@@ -296,7 +296,7 @@
 
 @keyframes ropa {
   0% {
-    background-color: black;
+    background-color: white;
     background-size: cover;
     background-size: 100% 200px;
   }
@@ -335,7 +335,7 @@
 
 @keyframes figuras {
   0% {
-    background-color: black;
+    background-color: white;
     background-size: cover;
     background-size: 100% 200px;
   }
