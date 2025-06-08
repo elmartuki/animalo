@@ -77,13 +77,14 @@
 
 .articulo {
   transition: 1s;
-  outline: 2px solid rgb(0, 0, 0);
 
   &:hover {
     transform: scale(1.03);
     animation: seleccionar 4s ease infinite alternate;
   }
 }
+
+
 
 .seleccionado {
   animation: fuego 2s ease infinite alternate;
