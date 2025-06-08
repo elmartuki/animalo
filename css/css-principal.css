@@ -57,8 +57,45 @@ input.form-control {
 /* ARTICULOS */
 
 .articulo {
+  outline: 2px solid white;
   img {
     object-fit: cover;
+  }
+}
+
+.articulo-ventana {
+  width: 100%;
+  height: 20px;
+  border-bottom: 2px solid white;
+
+  .borde:nth-child(1) {
+    width: 8%;
+    border-right: 2px solid white;
+  }
+
+  .borde:nth-child(2) {
+    width: 8%;
+    border-right: 2px solid white;
+  }
+
+  .borde:nth-child(3) {
+    width: 8%;
+    border-right: 2px solid white;
+  }
+
+  .borde:nth-child(4) {
+    width: 53%;
+    border-right: 2px solid white;
+  }
+
+  .borde:nth-child(5) {
+    width: 8%;
+    border-right: 2px solid white;
+  }
+
+  .borde:nth-child(6) {
+    width: 8%;
+    border-right: 2px solid white;
   }
 }
 
