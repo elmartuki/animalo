@@ -22,6 +22,11 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/previews/025/738/208/non_2x/anime-high-quality-logo-illustration-ideal-for-t-shirt-graphic-vector.jpg"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- BARRA DE NAVEGACION -->
@@ -75,6 +80,17 @@
                 >Accesorios</a
               >
             </li>
+
+            <li>
+              <button
+                type="button"
+                class="btn btn-outline-light"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Iniciar Sesion
+              </button>
+            </li>
           </ul>
           <form class="d-flex" role="search">
             <input
@@ -83,11 +99,88 @@
               placeholder="Buscar algo..."
               aria-label="Search"
             />
-            <button class="btn btn-outline-danger" type="submit">Buscar</button>
+            <button
+              class="btn btn-outline-danger d-flex justify-content-center align-items-center"
+              type="submit"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body bg-dark">
+            <form class="needs-validation" novalidate>
+              <div class="mb-3 text-white">
+                <label for="validationCustomUsername" class="form-label"
+                  >Username</label
+                >
+                <div class="input-group has-validation">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id=""
+                    aria-describedby="inputGroupPrepend"
+                    required
+                    minlength="5"
+                    maxlength="50"
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingrese un correo electronico.
+                  </div>
+                  <div class="valid-feedback">Esta bien.</div>
+                </div>
+              </div>
+              <div class="mb-3 text-white">
+                <label for="validationCustomUsername" class="form-label"
+                  >Contraseña</label
+                >
+                <div class="input-group has-validation">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id=""
+                    aria-describedby=""
+                    minlength="7"
+                    maxlength="30"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingrese una contraseña entre 7 y 30 caracteres.
+                  </div>
+                  <div class="valid-feedback">Esta bien.</div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-outline-danger w-100">
+                Iniciar Sesion
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- CAROUSEL -->
 
@@ -446,6 +539,7 @@
             name=""
             id=""
             placeholder="ejemplo@gmail.com"
+            required
           />
           <button class="btn btn-outline-danger w-25">Enviar</button>
         </form>
@@ -502,4 +596,30 @@
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"
   ></script>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      "use strict";
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll(".needs-validation");
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach((form) => {
+        form.addEventListener(
+          "submit",
+          (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    })();
+  </script>
 </html>
