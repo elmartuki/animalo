@@ -14,6 +14,11 @@
 
     <link rel="stylesheet" href="../css/css-principal.css" />
     <link rel="stylesheet" href="../css/css-animaciones.css" />
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/previews/025/738/208/non_2x/anime-high-quality-logo-illustration-ideal-for-t-shirt-graphic-vector.jpg"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- BARRA DE NAVEGACION -->
@@ -70,6 +75,17 @@
                 >Accesorios</a
               >
             </li>
+
+            <li>
+              <button
+                type="button"
+                class="btn btn-outline-light"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Iniciar Sesion
+              </button>
+            </li>
           </ul>
           <form class="d-flex" role="search">
             <input
@@ -78,11 +94,88 @@
               placeholder="Buscar algo..."
               aria-label="Search"
             />
-            <button class="btn btn-outline-danger" type="submit">Buscar</button>
+            <button
+              class="btn btn-outline-danger d-flex justify-content-center align-items-center"
+              type="submit"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body bg-dark">
+            <form class="needs-validation" novalidate>
+              <div class="mb-3 text-white">
+                <label for="validationCustomUsername" class="form-label"
+                  >Correo electronico</label
+                >
+                <div class="input-group has-validation">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id=""
+                    aria-describedby="inputGroupPrepend"
+                    required
+                    minlength="5"
+                    maxlength="50"
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingrese un correo electronico.
+                  </div>
+                  <div class="valid-feedback">Esta bien.</div>
+                </div>
+              </div>
+              <div class="mb-3 text-white">
+                <label for="validationCustomUsername" class="form-label"
+                  >Contraseña</label
+                >
+                <div class="input-group has-validation">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id=""
+                    aria-describedby=""
+                    minlength="7"
+                    maxlength="30"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingrese una contraseña entre 7 y 30 caracteres.
+                  </div>
+                  <div class="valid-feedback">Esta bien.</div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-outline-danger w-100">
+                Iniciar Sesion
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- CAROUSEL -->
 
@@ -426,9 +519,9 @@
           <h4 class="text-center text-white">¡Nos ubicamos acá!</h4>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.711276641632!2d-65.62216922550341!3d-27.433158185956742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9423c48bde48c89d%3A0xacc8297f2f1ce65e!2sAguara%20Guazu%20Aguilares%20Club!5e1!3m2!1ses-419!2sar!4v1749319584146!5m2!1ses-419!2sar"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d906.2690843172625!2d-65.20928060043916!3d-26.83431339401251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1749346677192!5m2!1ses-419!2sar"
           width="80%"
-          height="300px"
+          height="300"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -452,6 +545,7 @@
             name=""
             id=""
             placeholder="ejemplo@gmail.com"
+            required
           />
           <button class="btn btn-outline-danger w-25">Enviar</button>
         </form>

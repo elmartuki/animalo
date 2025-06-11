@@ -1,4 +1,16 @@
-/* ANIMACIONES HOVER */
+/* ANIMACIONES SOBRE NOSOTROS */
+
+.sobre-nosotros-tarjetas,
+.sobre-nosotros-titulo {
+  div {
+    transition: 1s;
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/* ANIMACIONES/HOVER */
 
 .categorias {
   transition: 0.5s;
@@ -18,15 +30,11 @@
   }
 
   .card-body {
-    img{
-      filter: drop-shadow(30px 10px 4px #000000 !important);
-    }
     p {
-      text-shadow: 0px 0px 5px black; !important;
+      text-shadow: 0px 0px 5px black !important;
     }
   }
 }
-
 
 .categorias:nth-child(3) {
   transition: 1s;
@@ -35,15 +43,11 @@
   }
 
   .card-body {
-    img{
-      filter: drop-shadow(30px 10px 4px #000000 !important);
-    }
     p {
-      text-shadow: 0px 0px 5px black; !important;
+      text-shadow: 0px 0px 5px black !important;
     }
   }
 }
-
 
 .categorias:nth-child(4) {
   transition: 1s;
@@ -52,15 +56,11 @@
   }
 
   .card-body {
-    img{
-      filter: drop-shadow(30px 10px 4px #000000 !important);
-    }
     p {
-      text-shadow: 0px 0px 5px black; !important;
+      text-shadow: 0px 0px 5px black !important;
     }
   }
 }
-
 
 .categorias:nth-child(5) {
   transition: 1s;
@@ -70,24 +70,25 @@
 
   .card-body {
     p {
-      text-shadow: 0px 0px 5px black; !important;
+      text-shadow: 0px 0px 5px black !important;
     }
   }
 }
 
-.articulo {
-  transition: 1s;
-
-  &:hover {
-    transform: scale(1.03);
+section {
+  .articulo:has(:hover) .borde {
     animation: seleccionar 4s ease infinite alternate;
   }
 }
 
-
+.articulo {
+  &:hover {
+    animation: seleccionar 4s ease infinite alternate;
+  }
+}
 
 .seleccionado {
-  animation: fuego 2s ease infinite alternate;
+  animation: nav-item-seleccionado 2s ease infinite alternate;
 }
 
 .nav-item {
@@ -209,7 +210,7 @@
   }
 }
 
-@keyframes fuego {
+@keyframes nav-item-seleccionado {
   0% {
     outline: 0px solid rgba(0, 0, 0, 0);
   }
@@ -226,7 +227,7 @@
     background-size: 100% 200px;
   }
 
-  5%{
+  5% {
     background-size: cover;
     background-image: url(https://i.pinimg.com/736x/1a/88/58/1a885860c5a4e5059875058f7884a5f6.jpg);
     background-size: 100% 200px;
@@ -264,7 +265,7 @@
     background-size: 100% 200px;
   }
 
-  5%{
+  5% {
     background-size: cover;
     background-image: url(https://www.dalmatoys.com.ar/wp-content/uploads/2021/11/20220824033434_1.jpg);
     background-size: 100% 200px;
@@ -302,7 +303,7 @@
     background-size: 100% 200px;
   }
 
-  5%{
+  5% {
     background-size: cover;
     background-image: url(https://acdn-us.mitiendanube.com/stores/004/105/084/products/fmmnsudaderas-con-capucha-de-anime-berserk-unisex-jerseys-harajuku-de-manga-larga-ropa-de-calle-con-0228132fcd6ec1c09517092622539120-480-0.webp);
     background-size: 100% 200px;
@@ -333,7 +334,6 @@
   }
 }
 
-
 @keyframes figuras {
   0% {
     background-color: white;
@@ -341,7 +341,7 @@
     background-size: 100% 200px;
   }
 
-  5%{
+  5% {
     background-size: cover;
     background-image: url(https://i.pinimg.com/736x/a7/5a/b3/a75ab36d3df4334a60f36063316d9930.jpg);
     background-size: 100% 200px;
@@ -371,13 +371,6 @@
     background-image: url(https://grandlinecoleccionables.com/cdn/shop/files/02_750x1050_498e432a-bf17-471f-b383-a01a091925fa.webp?v=1714550141&width=533);
   }
 }
-
-
-
-
-
-
-
 
 /* MEDIA QUERIES */
 

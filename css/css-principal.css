@@ -97,6 +97,10 @@ input.form-control {
     width: 8%;
     border-right: 2px solid white;
   }
+
+  .borde:nth-child(7) {
+    width: 8%;
+  }
 }
 
 /* LOGO */
@@ -143,6 +147,13 @@ iframe {
     }
   }
 
+  .form-control {
+    &:focus {
+      background-color: transparent;
+      color: var(--color-texto-blanco) !important;
+    }
+  }
+
   /* MAPA */
 
   iframe {
@@ -165,7 +176,6 @@ iframe {
   /* CATEGORIAS */
   .categorias {
     width: 20rem !important;
-    animation: activado;
 
     img {
       width: 40px;
