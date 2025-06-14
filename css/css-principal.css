@@ -117,7 +117,7 @@ iframe {
 /* CAROUCEL */
 
 .carousel-inner {
-  border-bottom: 15px solid rgb(75, 0, 0);
+  border-bottom: 5px solid rgb(0 0 0);
 }
 
 @media (min-width: 360px) {
