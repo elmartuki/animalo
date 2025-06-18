@@ -1,6 +1,10 @@
+.fondo {
+  background-image: url(/img/fondo-violeta.png);
+}
+
 @media (min-width: 1024px) {
   .sobre-nosotros-titulo {
-    box-shadow: 0px 0px 10px 10px rgba(255, 0, 0, 0.091);
+    box-shadow: 0px 0px 10px 10px rgba(166, 0, 255, 0.091);
     div {
       p {
         width: 60%;
@@ -12,13 +16,10 @@
   .sobre-nosotros-tarjetas {
     justify-content: space-around !important;
     flex-direction: row !important;
-    
-    
 
     div {
       width: 30vw;
       justify-content: space-between;
-      
     }
 
     p {
